@@ -10,25 +10,25 @@ html body {
     margin: auto;
 }
 
-header nav {
+#navbar {
     display: flex;
     justify-content: space-between;
     height: 60px;
     align-items: flex-end;
 }
 
-header nav img {
+#navbar img {
     width: 60px;
 }
 
-header nav div {
+#navlinks {
     display: flex;
     justify-content: space-between;
     width: 300px;
     height: 100%;
 }
 
-header nav div a {
+#navlinks a {
     display: flex;
     text-decoration: none;
     align-items: flex-end;
@@ -37,7 +37,7 @@ header nav div a {
     color: black;
 }
 
-header nav div a:hover {
+#navlinks a:hover {
     color: #0065fc;
     border-top: 3px solid #0065fc;
 }
@@ -54,13 +54,13 @@ h1 {
     font-size: 19px;
 }
 
-form {
+#SearchBar {
     display: flex;
     height: 50px;
     margin-bottom: 25px;
 }
 
-form div {
+#Location {
     display: flex;
     justify-content: center;
     height: 50px;
@@ -71,7 +71,7 @@ form div {
     border-radius: 16px 0px 0px 16px;
 }
 
-header input {
+#SearchText {
     color: black;
     font-weight: bold;
     border: none;
@@ -82,7 +82,7 @@ header input {
     font-size: 18px;
 }
 
-header button {
+#SearchButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +94,7 @@ header button {
     width: 110px;
 }
 
-header button i {
+#SearchButton i {
     display: none;
 }
 
@@ -105,13 +105,13 @@ header button i {
     padding-left: 8px;
 }
 
-#Filters ul {
+#FilterList {
     display: flex;
     list-style-type: none;
     padding-inline-start: 0px;
 }
 
-#Filters li {
+.Filter {
     display: flex;
     align-items: center;
     margin-left: 25px;
@@ -122,11 +122,12 @@ header button i {
     height: 45px;
 }
 
-#Filters li:hover {
-    background-color: #d9d9d9;
+.Filter:hover {
+    background-color: #DEEBFF;
 }
 
-.fa-money-bill-wave, .fa-heart {
+.fa-money-bill-wave,
+.fa-heart {
     color: #0065fc;
     padding: 0 7px 0 5px;
     font-size: 20px;
@@ -181,7 +182,8 @@ header button i {
     width: 100%;
 }
 
-#Hosting, #Popular {
+#Hosting,
+#Popular {
     display: flex;
     flex-wrap: wrap;
     background-color: #f2f2f2;
@@ -400,7 +402,7 @@ footer {
         padding-right: 60px;
     }
 
-    #HeaderTitle {
+    h1 {
         font-size: 22px;
     }
 
@@ -428,7 +430,7 @@ footer {
     #info {
         font-size: 15px;
     }
-    
+
     #ContainerHostingPopular {
         flex-direction: column;
     }
@@ -443,7 +445,8 @@ footer {
         margin-bottom: 50px;
     }
 
-    #Hosting, #Popular {
+    #Hosting,
+    #Popular {
         padding: 35px 35px 0 35px;
     }
 
@@ -453,7 +456,7 @@ footer {
     }
 
     #Hosting article h3 {
-        padding-left: 15px;    
+        padding-left: 15px;
         font-size: 14px;
     }
 
@@ -513,7 +516,7 @@ footer {
         height: 16.5%;
         font-size: 13px;
     }
-    
+
     footer {
         display: flex;
         justify-content: space-between;
@@ -552,7 +555,7 @@ footer {
         flex-wrap: wrap;
         margin-bottom: 40px;
     }
-    
+
     #navbar a {
         width: 100%;
         display: flex;
@@ -579,7 +582,7 @@ footer {
         border-bottom: 3px solid #0065fc;
     }
 
-    #HeaderTitle {
+    h1 {
         padding-left: 20px;
         max-width: 83%;
         font-size: 24px;
@@ -617,11 +620,13 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
+
     #Filters p {
         width: 100%;
         padding-left: 20px;
         font-size: 21px;
     }
+
     #FilterList {
         flex-wrap: wrap;
         font-size: 13px;
@@ -641,19 +646,19 @@ footer {
         padding-right: 6px;
         font-size: 20px;
     }
-    
+
     .fa-person {
         padding: 0;
         padding-right: 7px;
         font-size: 22px;
     }
-    
+
     .fa-heart {
         padding: 0;
         padding-right: 6px;
         font-size: 20px;
     }
-    
+
     .fa-dog {
         padding: 0;
         padding-right: 5px;
@@ -675,7 +680,9 @@ footer {
         border-radius: 0;
     }
 
-    #Popular article h3, #Popular article p, #Popular article span {
+    #Popular article h3,
+    #Popular article p,
+    #Popular article span {
         padding: 0;
         padding: 3px 0 0 7px;
     }
@@ -688,7 +695,8 @@ footer {
         background-color: white
     }
 
-    #Popular article, #Hosting article {
+    #Popular article,
+    #Hosting article {
         width: 100%;
     }
 

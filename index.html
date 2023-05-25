@@ -16,29 +16,29 @@
 <body>
     <header>
         <!-- Topbar logo + nav -->
-        <nav>
-            <a> <img src="images/logo/Booki.png" alt="logo booki"> </a>
-            <div>
+        <nav id="navbar">
+            <a href="#"> <img src="images/logo/Booki.png" alt="logo booki"> </a>
+            <div id="navlinks">
                 <a href="#Hosting">Hébergements</a>
                 <a href="#Activities">Activités</a>
             </div>
         </nav>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p id="HeaderSubtitle">En plein centre-ville ou en pleine nature</p>
-        <form>
-            <div>
+        <form id="SearchBar">
+            <div id="Location">
                 <i class="fa-solid fa-location-dot"></i>
             </div>
-            <input type="search" value="Marseille, France" aria-labelledby="SearchButton">
+            <input id="SearchText" type="search" value="Marseille, France" aria-labelledby="SearchButton">
             <button id="SearchButton"><span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <div id="Filters">
             <p>Filtres</p>
-            <ul>
-                <li><i class="fa-solid fa-money-bill-wave"></i>Économique</li>
-                <li><i class="fa-solid fa-person"></i>Familial</li>
-                <li><i class="fa-solid fa-heart"></i>Romantique</li>
-                <li><i class="fa-solid fa-fire"></i>Nos pépites</li>
+            <ul id="FilterList">
+                <li class="Filter"><i class="fa-solid fa-money-bill-wave"></i>Économique</li>
+                <li class="Filter"><i class="fa-solid fa-person"></i>Familial</li>
+                <li class="Filter"><i class="fa-solid fa-heart"></i>Romantique</li>
+                <li class="Filter"><i class="fa-solid fa-fire"></i>Nos pépites</li>
             </ul>
         </div>
         <div id="info">
@@ -53,8 +53,7 @@
                 <h2>Hébergements à Marseille</h2>
                 <article>
                     <a href="#">
-                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                            alt="Hôtel du port">
+                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                         <h3>Hôtel du port</h3>
                         <p>Nuit à partir de 52<b>€</b></p>
                         <span><i class="fa-solid fa-star starblue"></i>
@@ -121,8 +120,8 @@
                         </span>
                     </a>
                 </article>
-                
-                
+
+
                 <article>
                     <a href="#">
                         <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
@@ -137,7 +136,7 @@
                         </span>
                     </a>
                 </article>
-                
+
                 <div id="More">
                     <a href="">Afficher plus</a>
                 </div>
@@ -222,34 +221,28 @@
         </section>
     </main>
     <footer>
-        <div>
-            <ul class="FooterList">
-                <li>
-                    <h3>À propos</h3>
-                </li>
-                <li><a href="">Fonctionnement du site</a></li>
-                <li><a href="">Conditions générales</a></li>
-                <li><a href="">Données et confidentialité</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="FooterList">
-                <li>
-                    <h3>Nos hébergements</h3>
-                </li>
-                <li><a href="">Charte qualité</a></li>
-                <li><a href="">Proposer votre hôtel</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="FooterList">
-                <li>
-                    <h3>Assistance</h3>
-                </li>
-                <li><a href="">Centre d'aide</a></li>
-                <li><a href="">Nous contacter</a></li>
-            </ul>
-        </div>
+        <ul class="FooterList">
+            <li>
+                <h3>À propos</h3>
+            </li>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+        <ul class="FooterList">
+            <li>
+                <h3>Nos hébergements</h3>
+            </li>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Proposer votre hôtel</a></li>
+        </ul>
+        <ul class="FooterList">
+            <li>
+                <h3>Assistance</h3>
+            </li>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
     </footer>
 </body>
 
