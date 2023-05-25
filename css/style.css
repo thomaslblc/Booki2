@@ -1,0 +1,742 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+html body {
+    max-width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: flex-end;
+}
+
+header nav img {
+    width: 60px;
+}
+
+header nav div {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 100%;
+}
+
+header nav div a {
+    display: flex;
+    text-decoration: none;
+    align-items: flex-end;
+    padding: 0 20px;
+    height: 100%;
+    color: black;
+}
+
+header nav div a:hover {
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
+}
+
+h1 {
+    padding-top: 40px;
+    margin: 0px;
+    font-size: 26px;
+}
+
+#HeaderSubtitle {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+form {
+    display: flex;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    background-color: #f2f2f2;
+    align-items: center;
+    border-radius: 16px 0px 0px 16px;
+}
+
+header input {
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    padding-left: 15px;
+    width: 235px;
+    font-size: 18px;
+}
+
+header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065fc;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 16px 16px 0;
+    border: none;
+    width: 110px;
+}
+
+header button i {
+    display: none;
+}
+
+#Filters {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    padding-left: 8px;
+}
+
+#Filters ul {
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+#Filters li {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 0 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 3px solid #d9d9d9;
+    height: 45px;
+}
+
+#Filters li:hover {
+    background-color: #d9d9d9;
+}
+
+.fa-money-bill-wave, .fa-heart {
+    color: #0065fc;
+    padding: 0 7px 0 5px;
+    font-size: 20px;
+}
+
+.fa-person {
+    color: #0065fc;
+    padding: 0 7px 0 5px;
+    font-size: 22px;
+}
+
+.fa-fire {
+    color: #0065fc;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+#info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.fa-info {
+    padding: 0 5px 0 5px;
+    color: #0065fc;
+    border: 2px solid #d9d9d9;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-left: 8px;
+    font-size: 10px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#ContainerHostingPopular {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ContainerHostingPopular h2 {
+    font-size: 26px;
+    margin: 0;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+#Hosting, #Popular {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding: 42px 35px 0 35px;
+}
+
+#Hosting {
+    width: 65%;
+    justify-content: space-between;
+}
+
+#Hosting article {
+    width: 30%;
+    border-radius: 25px;
+    background-color: white;
+    margin-bottom: 5px;
+    height: min-content;
+    padding-bottom: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 10%);
+}
+
+#Hosting article img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 5px;
+}
+
+#Hosting article a,
+#Popular article a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#Hosting article h3 {
+    font-size: 14px;
+    padding-left: 12px;
+    margin: 0;
+}
+
+#Hosting article p {
+    font-size: 15px;
+    padding: 5px 0;
+    padding-left: 12px;
+    margin: 0;
+}
+
+#Hosting article span {
+    padding-left: 12px;
+    font-size: 12px;
+}
+
+#More a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#More a:hover {
+    text-decoration: underline;
+}
+
+.starblue {
+    color: #0065fc;
+}
+
+.stargrey {
+    color: #f2f2f2;
+}
+
+#Popular {
+    width: 30%;
+}
+
+#Popular h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#Popular h2 i {
+    font-size: 21px;
+    color: #0065fc;
+}
+
+#Popular article {
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 10%);
+}
+
+.PopularSubtitle {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.PopularSubtitle p {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+#Popular article p {
+    font-size: 15px;
+    margin: 0;
+}
+
+#Popular article h3 {
+    font-size: 15px;
+    margin: 5px 0;
+    padding-top: 5px;
+}
+
+#Popular article a {
+    display: flex;
+}
+
+#Popular article img {
+    width: 41%;
+    justify-content: flex-start;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 145px;
+    flex-shrink: 0;
+}
+
+#Popular article span {
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+#Activities {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+#Activities h2 {
+    width: 100%;
+}
+
+#Activities a {
+    width: 22%;
+    border-radius: 25px;
+    height: 445px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 10%);
+    text-decoration: none;
+}
+
+#Activities img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+#Activities h3 {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    margin: 0;
+    height: 8.7%;
+}
+
+footer {
+    display: flex;
+    background-color: #f2f2f2;
+    width: 100%;
+    margin-top: 61px;
+}
+
+.FooterList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    font-size: 21px;
+    margin-left: 25px;
+    margin-right: 145px;
+}
+
+.FooterList a {
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+}
+
+.FooterList a:hover {
+    text-decoration: underline;
+}
+
+.FooterList li {
+    padding-bottom: 7px;
+}
+
+@media screen and (max-width:992px) {
+    html body {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    #HeaderTitle {
+        font-size: 22px;
+    }
+
+    #HeaderSubtitle {
+        font-size: 16px;
+    }
+
+    #SearchButton {
+        font-size: 17px;
+        width: 130px;
+    }
+
+    #SearchButton i {
+        display: none;
+    }
+
+    #FilterList {
+        font-size: 14px;
+    }
+
+    .Filter {
+        border: 2px solid #d9d9d9;
+    }
+
+    #info {
+        font-size: 15px;
+    }
+    
+    #ContainerHostingPopular {
+        flex-direction: column;
+    }
+
+    #ContainerHostingPopular h2 {
+        font-size: 22px;
+        padding-bottom: 25px;
+    }
+
+    #Hosting {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #Hosting, #Popular {
+        padding: 35px 35px 0 35px;
+    }
+
+    #Hosting article {
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    #Hosting article h3 {
+        padding-left: 15px;    
+        font-size: 14px;
+    }
+
+    #Hosting article p {
+        padding-left: 15px;
+        font-size: 12px;
+    }
+
+    #Hosting article span {
+        padding-left: 15px;
+    }
+
+    #More {
+        margin-bottom: 35px;
+        margin-top: 10px;
+    }
+
+    #Popular {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #Popular article {
+        height: 144px;
+        width: 32%;
+    }
+
+    #Popular article img {
+        height: 100%;
+    }
+
+    #Popular article h3 {
+        font-size: 14px;
+    }
+
+    #Popular article p {
+        font-size: 13px;
+    }
+
+    #Popular h2 i {
+        font-size: 17px;
+    }
+
+    .PopularSubtitle {
+        padding: 0 11px;
+    }
+
+    #Activities a {
+        height: 240px;
+    }
+
+    #Activities img {
+        height: 80%;
+    }
+
+    #Activities h3 {
+        height: 16.5%;
+        font-size: 13px;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 130px 40px 55px
+    }
+
+    footer h3 {
+        font-size: 13px;
+    }
+
+    .FooterList {
+        margin: 0;
+        padding: 0;
+    }
+
+    .FooterList li {
+        padding-bottom: 0;
+    }
+
+    .FooterList a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html body {
+        padding: 0;
+    }
+
+    header {
+        height: 10%;
+    }
+
+    #navbar {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    
+    #navbar a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #navlinks {
+        width: 100%;
+    }
+
+    #navlinks a {
+        width: 50%;
+        padding-bottom: 20px;
+        font-size: 17px;
+        border-bottom: 3px solid #d9d9d9
+    }
+
+    #navlinks a:hover {
+        color: #0065fc;
+        border-top: 0;
+        border-bottom: 3px solid #0065fc;
+    }
+
+    #HeaderTitle {
+        padding-left: 20px;
+        max-width: 83%;
+        font-size: 24px;
+    }
+
+    #HeaderSubtitle {
+        padding-left: 20px;
+        margin-top: 16px;
+        font-size: 17px;
+        margin-bottom: 37px;
+    }
+
+    #SearchBar {
+        padding-left: 25px;
+        width: 94%;
+    }
+
+    #SearchText {
+        width: 70%;
+    }
+
+    #SearchButton {
+        width: 50px;
+    }
+
+    #SearchButton span {
+        display: none;
+    }
+
+    #SearchButton i {
+        display: inline;
+    }
+
+    #Filters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #Filters p {
+        width: 100%;
+        padding-left: 20px;
+        font-size: 21px;
+    }
+    #FilterList {
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+
+    .Filter {
+        width: 42%;
+        height: 50px;
+        padding-left: 13px;
+        margin: 0;
+        margin: 0 0 15px 20px;
+        align-items: center;
+    }
+
+    .fa-money-bill-wave {
+        padding: 0;
+        padding-right: 6px;
+        font-size: 20px;
+    }
+    
+    .fa-person {
+        padding: 0;
+        padding-right: 7px;
+        font-size: 22px;
+    }
+    
+    .fa-heart {
+        padding: 0;
+        padding-right: 6px;
+        font-size: 20px;
+    }
+    
+    .fa-dog {
+        padding: 0;
+        padding-right: 5px;
+        font-size: 19px;
+    }
+
+    #info {
+        width: 90%;
+        padding-left: 20px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    #ContainerHostingPopular {
+        flex-direction: column-reverse;
+    }
+
+    #Popular {
+        border-radius: 0;
+    }
+
+    #Popular article h3, #Popular article p, #Popular article span {
+        padding: 0;
+        padding: 3px 0 0 7px;
+    }
+
+    #Popular article span {
+        padding-bottom: 5px;
+    }
+
+    #Hosting {
+        background-color: white
+    }
+
+    #Popular article, #Hosting article {
+        width: 100%;
+    }
+
+    #More {
+        display: none;
+    }
+
+    #Activities {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    #Activities h2 {
+        width: 50%;
+    }
+
+    #Activities a {
+        width: 95%;
+        margin-bottom: 25px;
+        height: 200px;
+    }
+
+    #Activities img {
+        height: 70%;
+    }
+
+    #Activities h3 {
+        font-size: 15px;
+        height: 23.5%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0 0 60px 30px;
+        height: 501px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .FooterList {
+        font-size: 26px;
+    }
+
+    .FooterList a {
+        font-size: 17px;
+        padding: 5px 0 5px 0;
+    }
+}
